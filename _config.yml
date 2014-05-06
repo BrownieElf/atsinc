@@ -1,6 +1,7 @@
 name: ATSInc.
 markdown: redcarpet
 pygments: true
+baseurl: '/atsinc'
 
 navigation:
  - title: Home
