@@ -13,14 +13,55 @@ name: 'asdf'
 
       {% include nav.html %}
 
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ page.title }}</a></h1>
-
-            <a class="extra" href="/">home</a>
-          </div>
-            
-            {{ content }}
+      <div class="container-fluid">
+    <div class="row-fluid">
+    <div class="carousel slide" id="myCarousel">
+            <div class="carousel-inner">
+              <div class="item active">
+                    <ul class="thumbnails">
+                        <li class="span3">
+                            
+                            <div class="thumbnail">
+                                <img src="{{ site.baseurl }}/images/ats-express.jpg" alt="">
+                            </div>
+                            <div class="caption">
+                                <h5>ATS Express is bitchin' cool</h5>
+                            </div>
+                        </li>
+                    </ul>
+              </div>
+              <div class="item">
+                    <ul class="thumbnails">
+                        <li class="span3">
+                            <div class="thumbnail">
+                                <img src="{{ site.baseurl }}/images/ats-warehouse.jpg" alt="">
+                            </div>
+                            <div class="caption">
+                                <h5>ATS Warehouse</h5>
+                            </div>
+                        </li>
+                    </ul>
+              </div>
+              <div class="item">
+                    <ul class="thumbnails">
+                        <li class="span3">
+                            
+                            <div class="thumbnail">
+                                <img src="{{ site.baseurl }}/images/ats-inter.jpg" alt="">
+                            </div>
+                            <div class="caption">
+                                <h5>ATS Intermodal</h5>
+                            </div>
+                        </li>
+                    </ul>
+              </div>
+            </div>
+            <a data-slide="prev" href="#myCarousel" class="left carousel-control">‹</a>
+            <a data-slide="next" href="#myCarousel" class="right carousel-control">›</a>
+        </div>
+</div>
+</diV>
+        
 
           {% include footer.html %}
         </div>
@@ -29,4 +70,9 @@ name: 'asdf'
       <script src="{{ site.baseurl }}/js/bootstrap.js"></script>
     </body>
   </div>
+
+  
+
+
+
 </html>
