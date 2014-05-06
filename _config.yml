@@ -1,3 +1,11 @@
 name: ATSInc.
 markdown: redcarpet
 pygments: true
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about.html
+ - title: Contact
+   url: /contact.html

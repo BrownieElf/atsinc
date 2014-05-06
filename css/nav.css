@@ -1,0 +1,23 @@
+nav a {
+    text-decoration: none;
+}
+
+nav li {
+    line-height: 25px;
+    font-size: 14px;
+    
+}
+
+li.element.current {
+    color: #111;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li.element.current {
+	text-transform: uppercase;
+	color: #111;
+}
