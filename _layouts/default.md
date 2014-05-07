@@ -1,79 +1,15 @@
+---
+---
+
 <!DOCTYPE html>
 <html>
   <div class="container-fluid">
   
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>ATSInc.</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/atsinc/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/atsinc/css/main.css">
-        <link rel="stylesheet" href="/atsinc/css/bootstrap.css">
-        <link rel="stylesheet" href="/atsinc/css/bootstrap-theme.css">
-        <link rel="stylesheet" href="/atsinc/css/nav.css"
-        
-</head>
+    {% include header.html %}
 
     <body>
 
-      <nav class="navbar navbar-default" role="navigation">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">   
-        
-          
-
-          
-        
-          <li class="element  "><a href="/atsinc/index.html">Home</a></li>
-        
-          
-
-          
-        
-          <li class="element  "><a href="/atsinc/about.html">About</a></li>
-        
-          
-
-          
-        
-          <li class="element  "><a href="/atsinc/contact.html">Contact</a></li>
-        
-      </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Link</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
+      {% include nav.html %}
 
       <div class="container-fluid">
         <div class="row-fluid">
@@ -84,7 +20,7 @@
                 <ul class="thumbnails">
                   <li class="span6">
                     <div class="thumbnail">
-                      <img src="/atsinc/images/ats-express.jpg" alt="">
+                      <img src="{{ site.baseurl }}/images/ats-express.jpg" alt="">
                     </div>
                     <div class="caption">
                       <h5></h5>
@@ -102,7 +38,7 @@ The high volume of cargo that we manage allows us great discounts that are passe
                 <ul class="thumbnails">
                   <li class="span3">
                     <div class="thumbnail">
-                      <img src="/atsinc/images/ats-warehouse.jpg" alt="">
+                      <img src="{{ site.baseurl }}/images/ats-warehouse.jpg" alt="">
                     </div>
                     <div class="caption">
                       <h5></h5>
@@ -119,7 +55,7 @@ The high volume of cargo that we manage allows us great discounts that are passe
                 <ul class="thumbnails">
                   <li class="span3">
                     <div class="thumbnail">
-                      <img src="/atsinc/images/ats-inter.jpg" alt="">
+                      <img src="{{ site.baseurl }}/images/ats-inter.jpg" alt="">
                     </div>
                     <div class="caption">
                       <h5></h5>
@@ -141,28 +77,12 @@ ATS offers a growing fleet of over 60 trucks (48 asset-based) and a new fleet of
         </div>
       </div>
     </diV>
-        <h1>About Page</h1>
-        <div class="footer">
-            <div class="contact">
-              <p>
-                Your Name<br />
-                What You Are<br />
-                you@example.com
-              </p>
-            </div>
-            <div class="contact">
-              <p>
-                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
-                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
-              </p>
-            </div>
-          
-        
-
+        {{ content }}
+        {% include footer.html %}
         </div>
       </div>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <script src="/atsinc/js/bootstrap.js"></script>
+      <script src="{{ site.baseurl }}/js/bootstrap.js"></script>
     </body>
   </div>
 
